@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="curvy style.css">
+  <link rel="stylesheet" href="light style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle">
+      <div class="text">
+        <p>ALRAYYAN</p>
+      </div>
+      <div class="text2">
+        <p class="p2">SCITPO</p>
+      </div>
+      <div class="eye">
+        <div class="eye2">
+          <div class="eye3">
+            <div class="eye4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const text = document.querySelector('.text p');
+    text.innerHTML = text.innerText.split('').map(
+      (char, i) =>
+        `<span style='transform:rotate(${i * 7.3}deg)'>${char}</span>`
+    ).join('');
+    
+    const text2 = document.querySelector('.text2 p');
+    text2.innerHTML = text2.innerText.split('').map(
+      (char, i) =>
+        `<span class="span2" style='transform:rotate(${i * 7.3}deg)'>${char}</span>`
+    ).join('');
+  </script>
+
+</body>
+
+</html>
